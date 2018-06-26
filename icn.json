@@ -1,0 +1,19 @@
+{
+  "nodes": [
+    {"id": "Customer A", "group": 1},
+    {"id": "Bank A", "group": 2},
+    {"id": "Ordering Bank", "group": 2},
+    {"id": "Sending Correspondent Bank", "group": 2},
+    {"id": "Receiving Correspondent Bank", "group": 2},
+    {"id": "Account w/ Bank", "group": 2},
+    {"id": "Customer B", "group": 1}
+  ],
+  "links": [
+    {"source": "Customer A", "target": "Bank A", "value": 100},
+    {"source": "Bank A", "target": "Ordering Bank", "value": 100},
+    {"source": "Ordering Bank", "target": "Sending Correspondent Bank", "value": 100},
+    {"source": "Sending Correspondent Bank", "target": "Receiving Correspondent Bank", "value": 100},
+    {"source": "Receiving Correspondent Bank", "target": "Account w/ Bank", "value": 100},
+    {"source": "Account w/ Bank", "target": "Customer B", "value": 100}
+  ]
+}
