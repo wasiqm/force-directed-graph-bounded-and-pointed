@@ -9,7 +9,7 @@
     {"id": "Customer B", "group": 1}
   ],
   "links": [
-    {"source": "Customer A", "target": "Bank A", "value": 100},
+    {"source": "Customer A", "target": "Bank A", "value": 100, "type": "PAYMENT_ROUTE"},
     {"source": "Bank A", "target": "Ordering Bank", "value": 100},
     {"source": "Ordering Bank", "target": "Sending Correspondent Bank", "value": 100},
     {"source": "Sending Correspondent Bank", "target": "Receiving Correspondent Bank", "value": 100},
